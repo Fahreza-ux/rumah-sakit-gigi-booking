@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DentalCare - Sistem Booking Rumah Sakit Gigi</title>
+    <title>DentalCare Moestopo - Sistem Booking Rumah Sakit Gigi</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
 </head>
 <body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-tooth"></i>
-                <span>DentalCare</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7UfjwJj90jN6o-P2z84z1tYpVk1PNZ04X7w&s" 
+                     alt="Logo DentalCare Moestopo" 
+                     class="logo-img">
+                <div class="logo-text">
+                    <span>DentalCare</span>
+                    <span>Klinik Gigi Moestopo</span>
+                </div>
             </div>
             <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Beranda</a></li>
                 <li><a href="#services"><i class="fas fa-teeth"></i> Layanan</a></li>
-                <li><a href="#dentists"><i class="fas fa-user-md"></i> Dokter</a></li>
+                <li><a href="#doctors"><i class="fas fa-user-md"></i> Dokter</a></li>
                 <li><a href="#booking"><i class="fas fa-calendar-check"></i> Booking</a></li>
                 <li><a href="#contact"><i class="fas fa-phone-alt"></i> Kontak</a></li>
             </ul>
@@ -28,22 +41,18 @@
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Senyum Sehat, Kepercayaan Diri Bertambah</h1>
-                <p>Perawatan gigi profesional dengan teknologi terkini dan dokter gigi berpengalaman</p>
-                <a href="#booking" class="btn-hero">Booking Sekarang</a>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-teeth-open"></i>
-                    <p>Gambar Klinik Gigi Modern</p>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Senyum Sehat, Kepercayaan Diri Bertambah</h1>
+            <p>Perawatan gigi profesional dengan teknologi terkini dan dokter gigi berpengalaman di Klinik Gigi Moestopo</p>
+            <a href="#booking" class="btn-hero">Booking Janji Temu Sekarang</a>
+        </div>
+    </section>
 
-        <section id="services" class="services">
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
             <h2 class="section-title">Layanan Kami</h2>
             <div class="services-container">
                 <div class="service-card">
@@ -52,6 +61,7 @@
                     </div>
                     <h3>Pembersihan Gigi</h3>
                     <p>Pembersihan gigi profesional untuk menghilangkan plak dan karang gigi.</p>
+                    <p class="service-price">Rp 300.000</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -59,6 +69,7 @@
                     </div>
                     <h3>Behel Gigi</h3>
                     <p>Perawatan ortodontik untuk merapikan gigi dan memperbaiki struktur rahang.</p>
+                    <p class="service-price">Rp 8.000.000</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -66,6 +77,7 @@
                     </div>
                     <h3>Tambal & Crown</h3>
                     <p>Penambalan gigi berlubang dan pemasangan crown untuk gigi yang rusak.</p>
+                    <p class="service-price">Rp 2.500.000</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -73,15 +85,19 @@
                     </div>
                     <h3>Cabut Gigi</h3>
                     <p>Pencabutan gigi dengan teknik modern dan minim rasa sakit.</p>
+                    <p class="service-price">Rp 750.000</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="dentists" class="dentists">
-            <h2 class="section-title">Dokter Kami</h2>
-            <div class="dentists-container">
-                <div class="dentist-card">
-                    <div class="dentist-img">
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2 class="section-title">Tim Dokter Kami</h2>
+            <div class="doctors-container">
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
                         <i class="fas fa-user-md"></i>
                     </div>
                     <h3>Dr. Amanda Wijaya, Sp.KG</h3>
@@ -96,8 +112,8 @@
                         <span>4.5</span>
                     </div>
                 </div>
-                <div class="dentist-card">
-                    <div class="dentist-img">
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
                         <i class="fas fa-user-md"></i>
                     </div>
                     <h3>Dr. Rizky Pratama, Sp.Ort</h3>
@@ -112,8 +128,8 @@
                         <span>5.0</span>
                     </div>
                 </div>
-                <div class="dentist-card">
-                    <div class="dentist-img">
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
                         <i class="fas fa-user-md"></i>
                     </div>
                     <h3>Dr. Sari Dewi, Sp.Perio</h3>
@@ -129,9 +145,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="booking" class="booking">
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
             <h2 class="section-title">Booking Janji Temu</h2>
             <div class="booking-container">
                 <form id="bookingForm">
@@ -146,7 +165,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="phone"><i class="fas fa-phone"></i> Nomor Telepon</label>
+                        <label for="phone"><i class="fas fa-phone"></i> Nomor Telepon/WhatsApp</label>
                         <input type="tel" id="phone" name="phone" required placeholder="Masukkan nomor telepon">
                     </div>
                     
@@ -213,8 +232,8 @@
                     </div>
                     <div class="info-card">
                         <h4><i class="fas fa-map-marker-alt"></i> Lokasi Klinik</h4>
-                        <p>Jl. Kesehatan No. 123, Jakarta Pusat</p>
-                        <p>Gedung DentalCare Lt. 3</p>
+                        <p>Jl. Hang Lekir I No.6, Senayan, Jakarta</p>
+                        <p>Gedung Moestopo Lt. 3</p>
                     </div>
                     <div class="info-card">
                         <h4><i class="fas fa-phone-alt"></i> Kontak Darurat</h4>
@@ -227,72 +246,84 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
             <h2 class="section-title">Kontak Kami</h2>
             <div class="contact-container">
                 <div class="contact-info">
                     <h3><i class="fas fa-map-marker-alt"></i> Alamat</h3>
-                    <p>Jl. Kesehatan No. 123, Jakarta Pusat 10110</p>
+                    <p>Jl. Hang Lekir I No.6, Senayan, Jakarta 10270</p>
                     
                     <h3><i class="fas fa-phone-alt"></i> Telepon</h3>
                     <p>(021) 1234-5678</p>
                     
                     <h3><i class="fas fa-envelope"></i> Email</h3>
-                    <p>info@dentalcare.id</p>
+                    <p>info@dentalcare-moestopo.id</p>
                     
                     <h3><i class="fas fa-clock"></i> Jam Operasional</h3>
                     <p>Senin - Jumat: 08:00 - 17:00</p>
                     <p>Sabtu: 08:00 - 14:00</p>
+                    <p>Minggu: Tutup</p>
                 </div>
-                <div class="map">
-                    <div class="map-placeholder">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <p>Peta Lokasi Klinik DentalCare</p>
+                <div class="map-container">
+                    <div class="map-overlay">
+                        <h4>Lokasi Klinik DentalCare Moestopo</h4>
+                        <p>Klik untuk melihat di Google Maps</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3><i class="fas fa-tooth"></i> DentalCare</h3>
-                <p>Klinik gigi terpercaya dengan pelayanan terbaik dan teknologi terkini untuk kesehatan gigi Anda.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7UfjwJj90jN6o-P2z84z1tYpVk1PNZ04X7w&s" 
+                            alt="Logo DentalCare Moestopo" 
+                            style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;"> 
+                        DentalCare Moestopo</h3>
+                    <p>Klinik gigi terpercaya dengan pelayanan terbaik dan teknologi terkini untuk kesehatan gigi Anda.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#doctors">Dokter</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Pembersihan Gigi</a></li>
+                        <li><a href="#">Behel Gigi</a></li>
+                        <li><a href="#">Tambal & Crown</a></li>
+                        <li><a href="#">Cabut Gigi</a></li>
+                        <li><a href="#">Konsultasi</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-section">
-                <h3>Link Cepat</h3>
-                <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#services">Layanan</a></li>
-                    <li><a href="#dentists">Dokter</a></li>
-                    <li><a href="#booking">Booking</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DentalCare Moestopo. All rights reserved.</p>
+                <p>Dibuat dengan <i class="fas fa-heart"></i> untuk kesehatan gigi masyarakat Indonesia</p>
             </div>
-            <div class="footer-section">
-                <h3>Layanan</h3>
-                <ul>
-                    <li><a href="#">Pembersihan Gigi</a></li>
-                    <li><a href="#">Behel Gigi</a></li>
-                    <li><a href="#">Tambal & Crown</a></li>
-                    <li><a href="#">Cabut Gigi</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 DentalCare. All rights reserved.</p>
-            <p>Dibuat dengan <i class="fas fa-heart"></i> untuk kesehatan gigi masyarakat Indonesia</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-  </html>
+    </html>
