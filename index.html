@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalCare - Sistem Booking Rumah Sakit Gigi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>DentalCare</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="#services"><i class="fas fa-teeth"></i> Layanan</a></li>
+                <li><a href="#dentists"><i class="fas fa-user-md"></i> Dokter</a></li>
+                <li><a href="#booking"><i class="fas fa-calendar-check"></i> Booking</a></li>
+                <li><a href="#contact"><i class="fas fa-phone-alt"></i> Kontak</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Senyum Sehat, Kepercayaan Diri Bertambah</h1>
+                <p>Perawatan gigi profesional dengan teknologi terkini dan dokter gigi berpengalaman</p>
+                <a href="#booking" class="btn-hero">Booking Sekarang</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-teeth-open"></i>
+                    <p>Gambar Klinik Gigi Modern</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="section-title">Layanan Kami</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Pembersihan Gigi</h3>
+                    <p>Pembersihan gigi profesional untuk menghilangkan plak dan karang gigi.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3>Behel Gigi</h3>
+                    <p>Perawatan ortodontik untuk merapikan gigi dan memperbaiki struktur rahang.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Tambal & Crown</h3>
+                    <p>Penambalan gigi berlubang dan pemasangan crown untuk gigi yang rusak.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <h3>Cabut Gigi</h3>
+                    <p>Pencabutan gigi dengan teknik modern dan minim rasa sakit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dentists" class="dentists">
+            <h2 class="section-title">Dokter Kami</h2>
+            <div class="dentists-container">
+                <div class="dentist-card">
+                    <div class="dentist-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Dr. Amanda Wijaya, Sp.KG</h3>
+                    <p>Spesialis Konservasi Gigi</p>
+                    <p>Pengalaman: 10 tahun</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="dentist-card">
+                    <div class="dentist-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Dr. Rizky Pratama, Sp.Ort</h3>
+                    <p>Spesialis Ortodonti</p>
+                    <p>Pengalaman: 8 tahun</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+                <div class="dentist-card">
+                    <div class="dentist-img">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Dr. Sari Dewi, Sp.Perio</h3>
+                    <p>Spesialis Periodonsia</p>
+                    <p>Pengalaman: 12 tahun</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2 class="section-title">Booking Janji Temu</h2>
+            <div class="booking-container">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Masukkan email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Nomor Telepon</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Masukkan nomor telepon">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service"><i class="fas fa-teeth"></i> Layanan</label>
+                        <select id="service" name="service" required>
+                            <option value="">Pilih Layanan</option>
+                            <option value="cleaning">Pembersihan Gigi - Rp 300.000</option>
+                            <option value="braces">Behel Gigi - Rp 8.000.000</option>
+                            <option value="filling">Tambal Gigi - Rp 500.000</option>
+                            <option value="crown">Crown Gigi - Rp 2.500.000</option>
+                            <option value="extraction">Cabut Gigi - Rp 750.000</option>
+                            <option value="consultation">Konsultasi - Rp 150.000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dentist"><i class="fas fa-user-md"></i> Dokter (Opsional)</label>
+                        <select id="dentist" name="dentist">
+                            <option value="">Pilih Dokter</option>
+                            <option value="dr_amanda">Dr. Amanda Wijaya</option>
+                            <option value="dr_rizky">Dr. Rizky Pratama</option>
+                            <option value="dr_sari">Dr. Sari Dewi</option>
+                            <option value="any">Dokter Tersedia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date"><i class="fas fa-calendar"></i> Tanggal Janji Temu</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time"><i class="fas fa-clock"></i> Waktu Janji Temu</label>
+                        <select id="time" name="time" required>
+                            <option value="">Pilih Waktu</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes"><i class="fas fa-sticky-note"></i> Catatan Tambahan</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Masukkan catatan tambahan (gejala, riwayat kesehatan, dll)"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Booking
+                    </button>
+                </form>
+                
+                <div class="booking-info">
+                    <h3><i class="fas fa-info-circle"></i> Informasi Booking</h3>
+                    <div class="info-card">
+                        <h4><i class="fas fa-clock"></i> Jam Operasional</h4>
+                        <p>Senin - Jumat: 08:00 - 17:00</p>
+                        <p>Sabtu: 08:00 - 14:00</p>
+                        <p>Minggu: Tutup</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Lokasi Klinik</h4>
+                        <p>Jl. Kesehatan No. 123, Jakarta Pusat</p>
+                        <p>Gedung DentalCare Lt. 3</p>
+                    </div>
+                    <div class="info-card">
+                        <h4><i class="fas fa-phone-alt"></i> Kontak Darurat</h4>
+                        <p>Telepon: (021) 1234-5678</p>
+                        <p>WhatsApp: 0812-3456-7890</p>
+                    </div>
+                    <div class="booking-confirmation" id="confirmation">
+                        <h4><i class="fas fa-calendar-check"></i> Konfirmasi Booking</h4>
+                        <p>Detail booking Anda akan muncul di sini setelah mengisi form.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Kontak Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3><i class="fas fa-map-marker-alt"></i> Alamat</h3>
+                    <p>Jl. Kesehatan No. 123, Jakarta Pusat 10110</p>
+                    
+                    <h3><i class="fas fa-phone-alt"></i> Telepon</h3>
+                    <p>(021) 1234-5678</p>
+                    
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@dentalcare.id</p>
+                    
+                    <h3><i class="fas fa-clock"></i> Jam Operasional</h3>
+                    <p>Senin - Jumat: 08:00 - 17:00</p>
+                    <p>Sabtu: 08:00 - 14:00</p>
+                </div>
+                <div class="map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Peta Lokasi Klinik DentalCare</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-tooth"></i> DentalCare</h3>
+                <p>Klinik gigi terpercaya dengan pelayanan terbaik dan teknologi terkini untuk kesehatan gigi Anda.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#dentists">Dokter</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Layanan</h3>
+                <ul>
+                    <li><a href="#">Pembersihan Gigi</a></li>
+                    <li><a href="#">Behel Gigi</a></li>
+                    <li><a href="#">Tambal & Crown</a></li>
+                    <li><a href="#">Cabut Gigi</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 DentalCare. All rights reserved.</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> untuk kesehatan gigi masyarakat Indonesia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
