@@ -152,3 +152,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    });
+    
+    // Add active class to current nav link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.nav-links a').forEach(item => {
+                item.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+    
+    // Form validation on blur
+    document.querySelectorAll('#bookingForm input, #bookingForm select').forEach(element => {
+        element.addEventListener('blur', function() {
+            if (this.hasAttribute('required') && !this.value) {
+                this.style.borderColor = '#e74c3c';
+            } else {
+                this.style.borderColor = '#e9ecef';
+            }
+        });
+    });
+});
