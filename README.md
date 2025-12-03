@@ -43,15 +43,15 @@ Sistem booking online untuk rumah sakit gigi yang memungkinkan pasien membuat ja
 
 ## Struktur File
 dental-booking-system/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-├── assets/
-│   └── images/
-│       ├── dental-clinic.jpg
-│       ├── dentist1.jpg
-│       └── dentist2.jpg
-└── .gitignore
+-index.html
+-style.css
+-script.js
+-README.md
+-assets/
+ -images/
+ -dental-clinic.jpg
+ -dentist1.jpg
+  -dentist2.jpg
+
 
 # rumah-sakit-gigi-booking
