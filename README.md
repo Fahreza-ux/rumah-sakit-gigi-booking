@@ -29,7 +29,7 @@ Sistem booking online untuk rumah sakit gigi yang memungkinkan pasien membuat ja
 ## Cara Menggunakan
 
 1. **Kunjungi Website**
-   - Buka `index.html` di browser
+   - Buka 'https://fahreza-ux.github.io/rumah-sakit-gigi-booking/' di browser
 
 2. **Buat Booking**
    - Scroll ke bagian "Booking Janji Temu"
