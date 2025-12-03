@@ -1,45 +1,32 @@
-# DentalCare - Sistem Booking Rumah Sakit Gigi
+# DentalCare Moestopo - Sistem Booking Rumah Sakit Gigi
 
-Sistem booking online untuk rumah sakit gigi yang memungkinkan pasien membuat janji temu dengan mudah melalui website.
+Sistem booking online untuk Klinik Gigi Moestopo yang memungkinkan pasien membuat janji temu dengan mudah melalui website.
 
 ## Fitur Utama
 
-1. **Antarmuka Pengguna yang Responsif**
-   - Desain modern dan intuitif
-   - Compatible dengan desktop, tablet, dan mobile
+1. **Antarmuka Modern & Responsif**
+   - Desain UI/UX yang user-friendly
+   - Responsif di semua perangkat (desktop, tablet, mobile)
+   - Animasi dan transisi halus
 
 2. **Sistem Booking Lengkap**
-   - Formulir booking dengan validasi
+   - Formulir booking dengan validasi real-time
    - Pilihan layanan dan dokter
    - Pemilihan tanggal dan waktu
    - Konfirmasi booking instan
 
-3. **Informasi Klinik**
-   - Profil dokter gigi
-   - Daftar layanan yang tersedia
-   - Jam operasional
-   - Kontak dan lokasi
+3. **Integrasi WhatsApp**
+   - Tombol WhatsApp floating untuk konsultasi cepat
+   - Konfirmasi booking via WhatsApp
+   - Notifikasi booking ke admin
 
-4. **Fitur Tambahan**
-   - Smooth scrolling navigation
-   - Mobile-friendly menu
-   - Form validation
-   - Booking confirmation
+4. **Informasi Klinik**
+   - Profil dokter dengan rating
+   - Daftar layanan lengkap dengan harga
+   - Jam operasional dan lokasi
+   - Kontak dan sosial media
 
-## Cara Menggunakan
 
-1. **Kunjungi Website**
-   - Buka 'https://fahreza-ux.github.io/rumah-sakit-gigi-booking/' di browser
-
-2. **Buat Booking**
-   - Scroll ke bagian "Booking Janji Temu"
-   - Isi formulir dengan data pribadi
-   - Pilih layanan, dokter, tanggal, dan waktu
-   - Klik "Kirim Booking"
-
-3. **Konfirmasi**
-   - Detail booking akan muncul di sidebar
-   - Informasi juga akan dikirim ke email (simulasi)
 
 ## Struktur File
 **dental-booking-system/**
@@ -55,3 +42,6 @@ Sistem booking online untuk rumah sakit gigi yang memungkinkan pasien membuat ja
 
 
 # rumah-sakit-gigi-booking
+
+# Dibuat dengan ❤️ 
+
